@@ -11,6 +11,7 @@
 		3BE1405325931434009B85E0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1405225931434009B85E0 /* RootViewController.swift */; };
 		3BE1405825931435009B85E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1405725931435009B85E0 /* Assets.xcassets */; };
 		3BE1405B25931435009B85E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1405925931435009B85E0 /* LaunchScreen.storyboard */; };
+		3BE1407B25932505009B85E0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1407A25932505009B85E0 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3BE1405725931435009B85E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE1405A25931435009B85E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE1405C25931435009B85E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE1407A25932505009B85E0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		3BE1404D25931434009B85E0 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				3BE1407925932505009B85E0 /* View */,
 				3BE1404E25931434009B85E0 /* AppDelegate.swift */,
 				3BE1405225931434009B85E0 /* RootViewController.swift */,
 				3BE1405725931435009B85E0 /* Assets.xcassets */,
@@ -59,6 +62,14 @@
 				3BE1405C25931435009B85E0 /* Info.plist */,
 			);
 			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		3BE1407925932505009B85E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1407A25932505009B85E0 /* CustomTabBar.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE1405325931434009B85E0 /* RootViewController.swift in Sources */,
+				3BE1407B25932505009B85E0 /* CustomTabBar.swift in Sources */,
 				3BE1404F25931434009B85E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
