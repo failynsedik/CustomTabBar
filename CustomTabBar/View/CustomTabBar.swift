@@ -13,11 +13,9 @@ final class CustomTabBar: UITabBar {
     
     private var shapeLayer: CAShapeLayer?
     
-    // MARK: - Initializers
+    // MARK: - Overriden Methods
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
+    override func draw(_ rect: CGRect) {
         let shapeLayer: CAShapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.lightGray.cgColor
@@ -33,10 +31,6 @@ final class CustomTabBar: UITabBar {
         }
         
         self.shapeLayer = shapeLayer
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
 }
