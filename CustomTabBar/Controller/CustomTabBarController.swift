@@ -39,6 +39,19 @@ class CustomTabBarController: UITabBarController {
         
         // Set initially selected VC
         selectedIndex = 0
+        
+        // Set the tabBar to be the `CustomTabBar`. I am only doing this
+        // way of overriding the tabBar on this sample project but this
+        // should not be done on a prod app for the following reason:
+        //
+        // "This works, but there's a chance you might not pass
+        // App Store review because it's setting a value that public
+        // API doesn't allow you to set."
+        //
+        // REF: https://stackoverflow.com/a/59846917
+        let customTabBar: CustomTabBar = CustomTabBar(frame: CGRect.zero)
+        customTabBar.delegate = self
+        setValue(customTabBar, forKey: "tabBar")
     }
     
 }
