@@ -33,6 +33,15 @@ final class CustomTabBar: UITabBar {
         self.shapeLayer = shapeLayer
     }
     
+    /// "To avoid the TabBar receiving touch events by clicking the button in the lower areas,
+    /// we need to override the point-inside method of the TabBar and return false if the
+    /// button was clicked."
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let buttonRadius: CGFloat = 35
+        return abs(self.center.x - point.x) > buttonRadius ||
+                abs(point.y) > buttonRadius
+    }
+    
 }
 
 // MARK: - Private APIs
