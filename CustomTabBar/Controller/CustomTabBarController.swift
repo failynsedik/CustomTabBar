@@ -13,18 +13,26 @@ class CustomTabBarController: UITabBarController {
     
     private lazy var tabBarViewControllers: [UIViewController] = {
         let favoritesVC: FavoritesViewController = FavoritesViewController()
-        favoritesVC.tabBarItem = UITabBarItem(
+        let favoritesTabBarItem = UITabBarItem(
             title: "Favorites",
             image: UIImage(systemName: "star"),
             selectedImage: UIImage(systemName: "star.fill")
         )
+        // Adjusted the title's position since the title and icon
+        // is no longer centered due to the added Bézier curve.
+        favoritesTabBarItem.titlePositionAdjustment = UIOffset(horizontal: -20, vertical: 0)
+        favoritesVC.tabBarItem = favoritesTabBarItem
         
         let recentsVC: RecentsViewController = RecentsViewController()
-        recentsVC.tabBarItem = UITabBarItem(
+        let recentsTabBarItem = UITabBarItem(
             title: "Recents",
             image: UIImage(systemName: "clock"),
             selectedImage: UIImage(systemName: "clock.fill")
         )
+        // Adjusted the title's position since the title and icon
+        // is no longer centered due to the added Bézier curve.
+        recentsTabBarItem.titlePositionAdjustment = UIOffset(horizontal: 20, vertical: 0)
+        recentsVC.tabBarItem = recentsTabBarItem
         
         return [favoritesVC, recentsVC]
     }()
