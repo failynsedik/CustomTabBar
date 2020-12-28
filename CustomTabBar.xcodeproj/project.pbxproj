@@ -15,6 +15,7 @@
 		3BE140812593250D009B85E0 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1407E2593250D009B85E0 /* FavoritesViewController.swift */; };
 		3BE140822593250D009B85E0 /* RecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1407F2593250D009B85E0 /* RecentsViewController.swift */; };
 		3BE140832593250D009B85E0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE140802593250D009B85E0 /* CustomTabBarController.swift */; };
+		3BE140892599F1A1009B85E0 /* NSLayoutConstraint+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE140882599F1A1009B85E0 /* NSLayoutConstraint+Shortcuts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3BE1407E2593250D009B85E0 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		3BE1407F2593250D009B85E0 /* RecentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsViewController.swift; sourceTree = "<group>"; };
 		3BE140802593250D009B85E0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		3BE140882599F1A1009B85E0 /* NSLayoutConstraint+Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Shortcuts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				3BE1407D2593250D009B85E0 /* Controller */,
 				3BE1407925932505009B85E0 /* View */,
+				3BE140862599F17D009B85E0 /* Utitlities */,
 				3BE1404E25931434009B85E0 /* AppDelegate.swift */,
 				3BE1405225931434009B85E0 /* RootViewController.swift */,
 				3BE1405725931435009B85E0 /* Assets.xcassets */,
@@ -87,6 +90,22 @@
 				3BE1407F2593250D009B85E0 /* RecentsViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3BE140862599F17D009B85E0 /* Utitlities */ = {
+			isa = PBXGroup;
+			children = (
+				3BE140872599F186009B85E0 /* NSLayoutConstraintExtensions */,
+			);
+			path = Utitlities;
+			sourceTree = "<group>";
+		};
+		3BE140872599F186009B85E0 /* NSLayoutConstraintExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BE140882599F1A1009B85E0 /* NSLayoutConstraint+Shortcuts.swift */,
+			);
+			path = NSLayoutConstraintExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE140822593250D009B85E0 /* RecentsViewController.swift in Sources */,
+				3BE140892599F1A1009B85E0 /* NSLayoutConstraint+Shortcuts.swift in Sources */,
 				3BE1405325931434009B85E0 /* RootViewController.swift in Sources */,
 				3BE140832593250D009B85E0 /* CustomTabBarController.swift in Sources */,
 				3BE1407B25932505009B85E0 /* CustomTabBar.swift in Sources */,
