@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3BE1404F25931434009B85E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1404E25931434009B85E0 /* AppDelegate.swift */; };
-		3BE1405325931434009B85E0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1405225931434009B85E0 /* RootViewController.swift */; };
 		3BE1405825931435009B85E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1405725931435009B85E0 /* Assets.xcassets */; };
 		3BE1405B25931435009B85E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1405925931435009B85E0 /* LaunchScreen.storyboard */; };
 		3BE1407B25932505009B85E0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1407A25932505009B85E0 /* CustomTabBar.swift */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		3BE1404B25931434009B85E0 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE1404E25931434009B85E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BE1405225931434009B85E0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3BE1405725931435009B85E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE1405A25931435009B85E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE1405C25931435009B85E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 				3BE1407925932505009B85E0 /* View */,
 				3BE140862599F17D009B85E0 /* Utitlities */,
 				3BE1404E25931434009B85E0 /* AppDelegate.swift */,
-				3BE1405225931434009B85E0 /* RootViewController.swift */,
 				3BE1405725931435009B85E0 /* Assets.xcassets */,
 				3BE1405925931435009B85E0 /* LaunchScreen.storyboard */,
 				3BE1405C25931435009B85E0 /* Info.plist */,
@@ -179,7 +176,6 @@
 			files = (
 				3BE140822593250D009B85E0 /* RecentsViewController.swift in Sources */,
 				3BE140892599F1A1009B85E0 /* NSLayoutConstraint+Shortcuts.swift in Sources */,
-				3BE1405325931434009B85E0 /* RootViewController.swift in Sources */,
 				3BE140832593250D009B85E0 /* CustomTabBarController.swift in Sources */,
 				3BE1407B25932505009B85E0 /* CustomTabBar.swift in Sources */,
 				3BE140812593250D009B85E0 /* FavoritesViewController.swift in Sources */,
